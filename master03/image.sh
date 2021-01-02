@@ -1,5 +1,5 @@
 #!/bin/bash
-url=registry.cn-hangzhou.aliyuncs.com/loong576
+url=registry.cn-hangzhou.aliyuncs.com/jinlongw89
 version=v1.16.4
 images=(`kubeadm config images list --kubernetes-version=$version|awk -F '/' '{print $2}'`)
 for imagename in ${images[@]} ; do
