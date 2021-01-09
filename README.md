@@ -96,7 +96,7 @@ EOF
 ## 2. 验证mac地址uuid
 
 ```bash
-[root@master01 ~]# cat /sys/class/net/ens160/address
+[root@master01 ~]# cat /sys/class/net/enp0s3/address
 [root@master01 ~]# cat /sys/class/dmi/id/product_uuid
 ```
 
