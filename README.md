@@ -328,7 +328,7 @@ control plane和work节点都执行本部分操作。
 [root@master01 ~]# mkdir -p /etc/docker
 [root@master01 ~]# tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://v16stybc.mirror.aliyuncs.com"]
+  "registry-mirrors": ["https://r5uzm3ad.mirror.aliyuncs.com"]
 }
 EOF
 ```
