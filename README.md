@@ -946,6 +946,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
   name: cluster-admin
+  EOF
 ```
 
 ![image-20200309001333830](https://i.loli.net/2020/03/09/Mh5p6ZyA32Ewtvm.png)
