@@ -539,7 +539,7 @@ Kubernetes几乎所有的安装组件和Docker镜像都放在goolge自己的网�
 ```bash
 [root@master01 ~]# more image.sh 
 #!/bin/bash
-url=registry.cn-hangzhou.aliyuncs.com/loong576
+url=registry.cn-hangzhou.aliyuncs.com/jinlongw89
 version=v1.16.4
 images=(`kubeadm config images list --kubernetes-version=$version|awk -F '/' '{print $2}'`)
 for imagename in ${images[@]} ; do
@@ -908,7 +908,7 @@ EOF
 ### 2.1 修改镜像地址
 
 ```bash
-[root@client ~]# sed -i 's/kubernetesui/registry.cn-hangzhou.aliyuncs.com\/loong576/g' recommended.yaml
+[root@client ~]# sed -i 's/kubernetesui/registry.cn-hangzhou.aliyuncs.com\/jinlongw89/g' recommended.yaml
 ```
 
 由于默认的镜像仓库网络访问不通，故改成阿里镜像
