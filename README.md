@@ -537,7 +537,7 @@ control plane和work节点都执行本部分操作。
 Kubernetes几乎所有的安装组件和Docker镜像都放在goolge自己的网站上,直接访问可能会有网络问题，这里的解决办法是从阿里云镜像仓库下载镜像，拉取到本地以后改回默认的镜像tag。本文通过运行image.sh脚本方式拉取镜像。
 
 ```bash
-[root@master01 ~]# more image.sh 
+[root@master01 ~]# cat >> image.sh << EOF
 #!/bin/bash
 url=registry.cn-hangzhou.aliyuncs.com/jinlongw89
 version=v1.16.4
@@ -547,6 +547,7 @@ for imagename in ${images[@]} ; do
   docker tag $url/$imagename k8s.gcr.io/$imagename
   docker rmi -f $url/$imagename
 done
+EOF
 ```
 
 url为阿里云镜像仓库地址，version为安装的kubernetes版本。
